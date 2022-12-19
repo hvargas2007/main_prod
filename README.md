@@ -122,3 +122,37 @@ variable "project-tags" {
   }
 }
 ```
+
+Clonar el proyecto 
+
+```bash
+  git clone https://github.com/hvargas2007/main_prod.git
+```
+
+Ir al directorio del proyecto
+
+```bash
+  cd main_prod
+```
+
+Ubicado en el directorio donde se encuentra en manifiesto de terraform, haga un "aws configure" para iniciar sesión en la cuenta de aws y un "terraform init" para descargar los módulos necesarios e iniciar el backend.
+
+```bash
+aws configure
+terraform init
+```
+
+## Procedimientos de implementación:
+
+Ubicado en el directorio donde se encuentra en manifiesto de terraform, realice los cambios necesarios en el archivo variables.tf y ejecute los manifiestos:
+
+```bash
+terraform fmt      = para darle formato a los archivos
+terraform validate = validamos que no tengamos alguna inconsistencia en los recursos
+terraform apply    = realizamos ya el despliegue de los recursos
+terraform destroy  = destruimos todo lo desplegamos en este manisfiesto
+```
+
+## Autor:
+
+Hermes Vargas - Hermes.vargas@cloudhesive.com
