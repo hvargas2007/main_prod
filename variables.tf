@@ -1,7 +1,7 @@
-variable "profile" {
+variable "aws_profile" {
   description = "[REQUERIDO] Profile utilizado para realizar despliegue"
   type        = string
-  default     = "atentus"
+  default     = "hermes-ch-cli"
 }
 
 variable "aws_region" {
@@ -44,12 +44,12 @@ variable "PublicSubnet" {
     {
       name = "PublicSubnet-A"
       az   = "us-east-1a"
-      cidr = "10.10.0.0/23"
+      cidr = "10.10.0.0/24"
     },
     {
       name = "PublicSubnet-B"
       az   = "us-east-1b"
-      cidr = "10.10.2.0/23"
+      cidr = "10.10.1.0/24"
     }
   ]
 }
@@ -64,12 +64,12 @@ variable "PrivateSubnet" {
     {
       name = "PrivateSubnet-A"
       az   = "us-east-1a"
-      cidr = "10.10.3.0/23"
+      cidr = "10.10.2.0/24"
     },
     {
       name = "PrivateSubnet-B"
       az   = "us-east-1b"
-      cidr = "10.10.4.0/23"
+      cidr = "10.10.3.0/24"
     }
   ]
 }
