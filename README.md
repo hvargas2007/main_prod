@@ -1,8 +1,8 @@
 # Repositorio Main para despliegues de arquitectura
 
-Este repositorio tiene cumple el objetivo de ser el root module para despliegue de arquitectura desplega en repositorio de servicios
+Este repositorio cumple el objetivo de ser el root module para despliegue de arquitectura en repositorio de servicios
 
-En este estrucutra trabajaremos con referencia hacia TAG en los repositorios, por lo cual al hacer el llamado a una nueva version siempore debemos verificar la ultima version del TAG
+En esta estructura trabajaremos con referencia hacia TAG en los repositorios, por lo cual al hacer el llamado a una nueva version siempore debemos verificar la ultima version del TAG
 
 ## Probado con:
 
