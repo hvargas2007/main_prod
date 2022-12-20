@@ -12,12 +12,13 @@ module "vpc" {
 }
 
 module "ec2" {
-  source           = "git::https://github.com/hvargas2007/ec2-demo.git?ref=v1.0.0"
-  aws_profile      = var.aws_profile
-  aws_region       = var.aws_region
-  vpc_id           = module.vpc.vpc_id
+  source            = "git::https://github.com/hvargas2007/ec2-demo.git?ref=v1.0.0"
+  aws_profile       = var.aws_profile
+  aws_region        = var.aws_region
+  vpc_id            = module.vpc.vpc_id
   private_subnet_id = module.vpc.private_subnet_id
-  key_name         = var.key_name
-  name_prefix      = var.name_prefix
-  project-tags     = var.project-tags
+  key_name          = var.key_name
+  name_prefix       = var.name_prefix
+  project-tags      = var.project-tags
+
 }

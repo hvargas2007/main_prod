@@ -60,17 +60,6 @@ variable "instance_type" {
   }
 }
 
-variable "vpc_id" {
-  description = "[REQUIRED] The VPC ID"
-  type        = string
-}
-
-# variable "private_subnet_id" {
-#   description = "[REQUIRED] The Subnet ID"
-#   type        = string
-# }
-
-
 ##################
 # Tags Variables #
 ##################
