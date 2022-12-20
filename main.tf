@@ -16,7 +16,7 @@ module "ec2" {
   aws_profile       = var.aws_profile
   aws_region        = var.aws_region
   vpc_id            = module.vpc.vpc_id
-  private_subnet_id = module.vpc.private_subnet_id
+  privatesubnet_id = module.vpc.privatesubnet_id
   key_name          = var.key_name
   name_prefix       = var.name_prefix
   project-tags      = var.project-tags
