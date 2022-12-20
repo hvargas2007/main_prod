@@ -65,7 +65,7 @@ variable "vpc_id" {
   type        = string
 }
 
-variable "PrivateSubnet_id" {
+variable "private_subnet_id" {
   description = "[REQUIRED] The Subnet ID"
   type        = string
 }
