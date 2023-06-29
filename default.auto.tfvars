@@ -33,11 +33,3 @@ project-tags = {
   DeployBy   = "CloudHesive",
   Enviroment = "Dev"
 }
-
-#Variable Ec2
-key_name = "meetup"
-instance_type = {
-  "type1" = "t2.micro",
-  "type2" = "t2.small",
-  "type3" = "t2.medium"
-}
