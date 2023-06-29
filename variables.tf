@@ -45,21 +45,6 @@ variable "PrivateSubnet" {
   }))
 }
 
-
-# SSH Key-Pair 
-variable "key_name" {
-  description = "[REQUIRED] The Key Pair Ec2"
-  type        = string
-}
-
-/* EC2 Instance type */
-#Use: instance_type = var.instance_type["type1"]
-variable "instance_type" {
-  type = map(string)
-  default = {
-  }
-}
-
 ##################
 # Tags Variables #
 ##################
