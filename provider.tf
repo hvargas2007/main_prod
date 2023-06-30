@@ -14,6 +14,7 @@ terraform {
     key            = "global/codepipeline/terraform.tfstate"
     dynamodb_table = "terraform-tfstate-cicd-poc"
     region         = "us-east-1"
+    acl            = "bucket-owner-full-control"
     encrypt        = true
   }
 
