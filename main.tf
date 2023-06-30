@@ -1,6 +1,7 @@
 # Create a vpc
 module "vpc" {
   source         = "git::https://github.com/hvargas2007/vpc-demo.git?ref=v1.0.4"
+  aws_profile    = "place_holder"
   aws_region     = var.aws_region
   logs_retention = var.logs_retention
   vpc_cidr       = var.vpc_cidr
