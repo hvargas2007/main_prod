@@ -2,6 +2,7 @@ aws_region     = "us-east-1"
 vpc_cidr       = "10.10.0.0/16"
 logs_retention = "3"
 name_prefix    = "Qa"
+deploy_this_module = false 
 PublicSubnet = [
   {
     name = "Public-a"
@@ -33,6 +34,8 @@ aws_accounts = {
   dev = "241932037727",
   qa = "859239089006"
 }
+
+
 
 # Variable Tag
 project-tags = {

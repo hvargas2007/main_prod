@@ -7,6 +7,11 @@ variable "aws_accounts" {
   type = map(string)
 }
 
+variable "deploy_this_module" {
+  description = "[REQUERIDO]"
+  type        = bool
+}
+
 
 ################
 # VARIABLE VPC #
