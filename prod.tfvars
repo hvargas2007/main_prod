@@ -29,7 +29,9 @@ PrivateSubnet = [
 
 # Account ID
 aws_accounts = {
-  prod   = "764883746756",
+  prod = "764883746756",
+  dev = "241932037727",
+  qa = "859239089006"
 }
 
 # Variable Tag
