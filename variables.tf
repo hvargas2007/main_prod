@@ -1,12 +1,12 @@
-variable "aws_profile" {
-  description = "[REQUERIDO] Profile utilizado para realizar despliegue"
-  type        = string
-}
-
 variable "aws_region" {
   description = "[REQUERIDO] El AWS Region para implementar los recursos"
   type        = string
 }
+
+variable "aws_accounts" {
+  type = map(string)
+}
+
 
 ################
 # VARIABLE VPC #

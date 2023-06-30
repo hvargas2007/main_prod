@@ -1,8 +1,7 @@
-aws_profile    = "hermes-ch-cli"
 aws_region     = "us-east-1"
 vpc_cidr       = "10.10.0.0/16"
 logs_retention = "3"
-name_prefix    = "demo"
+name_prefix    = "Qa"
 PublicSubnet = [
   {
     name = "Public-a"
@@ -27,6 +26,11 @@ PrivateSubnet = [
     cidr = "10.10.6.0/23"
   }
 ]
+
+# Account ID
+aws_accounts = {
+  qa = "859239089006"
+}
 
 # Variable Tag
 project-tags = {
