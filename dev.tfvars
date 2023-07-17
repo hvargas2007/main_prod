@@ -2,7 +2,7 @@ aws_region     = "us-east-1"
 vpc_cidr       = "10.10.0.0/16"
 logs_retention = "3"
 name_prefix    = "demo"
-deploy_this_module = false
+deploy_this_module = true
 PublicSubnet = [
   {
     name = "Public-a"
