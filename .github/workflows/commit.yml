@@ -8,6 +8,9 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
+    
+      - name: Git checkout
+        uses: actions/checkout@v2
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
