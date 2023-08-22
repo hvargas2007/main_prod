@@ -4,10 +4,29 @@ on:
   push:
     branches: [ "main" ]
 
+env:
+  AWS_REGION: ${{ vars.AWS_REGION }}
+  AWS_ROLE: ${{ vars.AWS_ROLE }}
+
+permissions:
+      id-token: write   # This is required for requesting the JWT
+      contents: read    # This is required for actions/checkout
+      pull-requests: write    # This is required for infracost to write on pull requests.
+
 jobs:
-  main:
+  deploy:
     runs-on: ubuntu-latest
     steps:
+
+      - name: Git checkout
+        uses: actions/checkout@v2
+
+      - name: Configure AWS credentials from AWS account
+        uses: aws-actions/configure-aws-credentials@v1.7.0
+        with:
+          role-to-assume: ${{ env.AWS_ROLE }}
+          aws-region: ${{ env.AWS_REGION }}
+          role-session-name: GitHub-OIDC-TERRAFORM
     
       - name: Git checkout
         uses: actions/checkout@v2
