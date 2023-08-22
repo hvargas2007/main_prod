@@ -27,9 +27,6 @@ jobs:
           role-to-assume: ${{ env.AWS_ROLE }}
           aws-region: ${{ env.AWS_REGION }}
           role-session-name: GitHub-OIDC-TERRAFORM
-    
-      - name: Git checkout
-        uses: actions/checkout@v2
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
